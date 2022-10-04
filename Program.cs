@@ -1,13 +1,14 @@
-﻿// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+﻿//Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
 int a;
 Console.Write("Введите число: ");
-a = int.Parse(Console.ReadLine()!);
-if (a % 2 == 0)
+int.TryParse(Console.ReadLine()!, out a);
+int coint = 1;
+
+
+while (coint <= a)
 {
-    Console.WriteLine($"{a} - это четное число"); ;
-}
-else
-{
-    Console.WriteLine($"{a} - это нечетное число");
+    if (coint % 2 == 0)
+        Console.Write(coint + "|");
+    coint++;
 }
