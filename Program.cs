@@ -4,8 +4,6 @@ int a;
 Console.Write("Введите число: ");
 int.TryParse(Console.ReadLine()!, out a);
 int coint = 1;
-
-
 while (coint <= a)
 {
     if (coint % 2 == 0)
