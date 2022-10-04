@@ -1,39 +1,13 @@
-﻿//Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+﻿// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
-int a, b, c;
-Console.Write("Введите первое число для сравнения: ");
-int.TryParse(Console.ReadLine()!, out a);
-Console.Write("Введите второе число для сравнения: ");
-int.TryParse(Console.ReadLine()!, out b);
-Console.Write("Введите третье число для сравнения: ");
-int.TryParse(Console.ReadLine()!, out c);
-int max = a;
-if (b > max) max = b;
-if (c > max) max = c;
-Console.WriteLine($"Наибольшее число = {max}");
-
-
-/* Другой вариант
-int a, b, c;
-Console.Write("Введите первое число для сравнения: ");
+int a;
+Console.Write("Введите число: ");
 a = int.Parse(Console.ReadLine()!);
-Console.Write("Введите второе число для сравнения: ");
-b = int.Parse(Console.ReadLine()!);
-Console.Write("Введите третье число для сравнения: ");
-c = int.Parse(Console.ReadLine()!);
-if (a > b)
+if (a % 2 == 0)
 {
-    if (a > c)
-        Console.WriteLine($"Наибольшее число = {a}");
-    else
-        Console.WriteLine($"Наибольшее число = {c}");
-
+    Console.WriteLine($"{a} - это четное число"); ;
 }
 else
 {
-    if (b > c)
-        Console.WriteLine($"Наибольшее число = {b}");
-    else
-        Console.WriteLine($"Наибольшее число = {c}");
+    Console.WriteLine($"{a} - это нечетное число");
 }
-*/
